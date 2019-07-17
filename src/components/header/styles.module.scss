@@ -1,0 +1,12 @@
+@import '../../sass/variables.scss';
+
+.header {
+  padding: 20px;
+  background: $color-black;
+  border-bottom: 1px solid $color-blue;
+}
+
+.header__inner {
+  margin: 0 auto;
+  max-width: 400px;
+}

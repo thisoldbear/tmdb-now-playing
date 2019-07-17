@@ -1,0 +1,23 @@
+.listings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  overflow: hidden;
+}
+
+.listings__item {
+  width: calc(100% - 40px);
+  max-width: 300px;
+  margin: 20px;
+
+  @media only screen and (min-width: 768px) {
+    width: calc(50% - 40px);
+  }
+
+  @media only screen and (min-width: 1024px) {
+    width: calc(33% - 40px);
+  }
+}

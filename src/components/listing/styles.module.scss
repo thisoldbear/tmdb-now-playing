@@ -1,0 +1,95 @@
+@import '../../sass/variables.scss';
+
+.listing {
+  position: relative;
+  background: $color-black;
+}
+
+.listing__details {
+  position: absolute;
+  bottom: 0;
+  background: rgba($color-white, 0.9);
+  width: 100%;
+  padding: 10px;
+  z-index: 1;
+}
+
+.listing__title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 22px;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 25px;
+  }
+}
+
+.listing__img-container {
+  padding-top: 150%;
+}
+
+.listing__img {
+  display: block;
+  position: absolute;
+  top: 0;
+  max-width: 100%;
+}
+
+.listing__genres {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -3px;
+}
+
+.listing__genre {
+  padding: 2px 7px;
+  font-size: 16px;
+  color: $color-white;
+  background: $color-red;
+  border: 1px solid darken($color-red, 10%);
+  border-radius: 3px;
+  margin: 3px;
+}
+
+.listing__vote-average {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65px;
+  height: 30px;
+  transform: translate(15px, 0px);
+  background: linear-gradient(to bottom, lighten($color-green, 15%) 0%, $color-green 100%);
+
+}
+
+.listing__vote-average:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 15px solid lighten($color-green, 15%);
+}
+
+.listing__vote-average:after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid $color-green;
+}
+
+.listing__vote-average-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

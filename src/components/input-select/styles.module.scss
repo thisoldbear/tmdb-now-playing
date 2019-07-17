@@ -1,0 +1,11 @@
+@import '../../sass/variables.scss';
+
+.input-select {}
+
+.input-select__label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: $color-white;
+  text-align: center;
+}

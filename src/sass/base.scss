@@ -1,0 +1,18 @@
+// Vendor
+@import '~reset-css/reset.css';
+
+@import './variables.scss';
+@import './fonts.scss';
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family-body;
+  color: $color-grey;
+  background-color: $color-black;
+  background-image: url('../topography.svg');
+}

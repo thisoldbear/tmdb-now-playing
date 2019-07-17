@@ -1,0 +1,50 @@
+@import '../../sass/variables.scss';
+
+.logo {
+  position: relative;
+  width: 270px;
+  padding: 20px 0;
+  margin: 30px auto;
+  font-size: 22px;
+  color: $color-white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.logo__text-highlight {
+  color: $color-green;
+}
+
+.logo__symbol {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  width: 40px;
+  height: 20px;
+  transform: translate(15px, 0px);
+  background: linear-gradient(to bottom, lighten($color-green, 30%) 0%, $color-green 100%);
+}
+
+.logo__symbol:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 10px solid lighten($color-green, 30%);
+}
+
+.logo__symbol:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid $color-green;
+}
